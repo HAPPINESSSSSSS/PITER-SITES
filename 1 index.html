@@ -3,25 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PITER-SITES</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f0f0f0;
-      color: #333;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      font-size: 18px;
-    }
-  </style>
+  <title>PITER SITES</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>PITER-SITES</h1>
-  <p>Добро пожаловать на мой сайт о Санкт-Петербурге!</p>
-  <p>Здесь будет интересная информация, фотографии и ссылки.</p>
+
+  <header>
+    <h1>PITER-SITES</h1>
+  </header>
+
+  <main id="main-content">
+    <p>Добро пожаловать на сайт PITER-SITES!</p>
+    <button id="loadBtn">Показать дополнительную информацию</button>
+    <!-- Контейнер под данные -->
+    <div id="extra-info"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 PITER SITES</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+Содержимое style.css (📄):
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header, footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#extra-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e1f0ff;
+  border: 1px solid #9dbcd4;
+  display: none; / Изначально скрыт /
+}
